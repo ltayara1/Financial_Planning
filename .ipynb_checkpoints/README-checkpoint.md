@@ -1,10 +1,6 @@
-# Unit 5 - Financial Planning
+# Financial Planning
 
-![Financial Planner](Images/financial-planner.png)
-
-## Background
-
-You decided to start a FinTech consultancy firm, and you want to make the difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union, asked you to develop a prototype application to present a demo in the next credit union assembly.
+In this project, I develop a prototype application to present a demo in the next credit union assembly.
 
 The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
 
@@ -14,19 +10,9 @@ You will create two financial analysis tools using Jupyter notebooks. The first 
 
 The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed by stocks and bonds and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
----
 
-### Files
 
-* [Personal Finance Planner starter code](Starter_Code/financial-planner.ipynb)
-
-* [MCForecastTools toolkit](Starter_Code/MCForecastTools.py)
-
----
-
-## Instructions
-
-### Part 1 - Personal Finance Planner
+## Personal Finance Planner
 
 In this section of the challenge, you will create a personal finance planner application. To develop the personal finance planner prototype, you should take into account the following assumptions:
 
@@ -66,7 +52,9 @@ Assume the following amount of shares: `200` `AGG` (bonds) and `50` `SPY` (stock
 
 5. Compute the value in US dollars of the current amount of shares and print the results.
 
-#### Savings Health Analysis
+----
+
+### Savings Health Analysis
 
 In this section, you will assess the financial health of the credit union's members.
 
@@ -90,7 +78,9 @@ In this section, you will use the Alpaca API to fetch historical closing prices 
 
 Follow the steps outlined in the starter notebook to complete the following.
 
-#### Monte Carlo Simulation
+
+
+### Monte Carlo Simulation
 
 Use the MCForecastTools toolkit to create a Monte Carlo simulation for the retirement portfolio:
 
@@ -117,35 +107,3 @@ Fetch the summary statistics from the Monte Carlo simulation results to answer t
 The CTO of the Credit Union was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CFO starts wondering if the retirement plan could be adjusted to retire earlier than normal.
 
 Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
-
----
-
-### Resources
-
-* [AlpacaDOCS](https://alpaca.markets/docs/)
-
-* [Free Crypto API Documentation](https://alternative.me/crypto/api/)
-
----
-
-### Hints and Considerations
-
-* For the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the simulation at `100–500` simulations for `30` years.
-
-* Remember to add the `.env` files to the `.gitignore` configuration to avoid exposing your API keys in your GitHub repository.
-
-* A `.gitignore` file contains file names and extensions of files that you don't want to pushed to your repository. For more information on how a `gitignore` works, you can read the documentation [here](https://docs.github.com/en/github/using-git/ignoring-files).
-
----
-
-### Submission
-
-1. Create a Jupyter Notebook containing your Personal Finance Planner Jupyter notebook.
-
-2. Submit your notebook to a new GitHub repository and create a `README.md` file.
-
-3. Submit the link to your GitHub project to Bootcampspot for grading.
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
