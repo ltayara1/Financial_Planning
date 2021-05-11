@@ -44,13 +44,7 @@ In this section, I used the Alpaca API to fetch historical closing prices for a 
 
 ### Monte Carlo Simulation
 
-I used the MCForecastTools toolkit to create a Monte Carlo simulation for the retirement portfolio. I used the Alpaca API to fetch five years worth of historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`). I ran a Monte Carlo Simulation of `500` and `30` years for the `40/60` portfolio and plot the results.
-
-    ![monte carlo](Images/monte-carlo.png)
-
-I plotted the probability distribution and confidence intervals.
-
-    ![histogram](Images/histogram.png)
+I used the MCForecastTools toolkit to create a Monte Carlo simulation for the retirement portfolio. I used the Alpaca API to fetch five years worth of historical closing prices for a traditional `40/60` portfolio using the `SPY` and `AGG` tickers to represent the `60%` stocks (`SPY`) and `40%` bonds (`AGG`). I ran a Monte Carlo Simulation of `500` and `30` years for the `40/60` portfolio and plot the results. Last, I plotted the probability distribution and confidence intervals.
 
 ### Retirement Analysis
 
